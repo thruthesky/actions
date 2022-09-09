@@ -14,10 +14,19 @@ jobs:
         run: echo "Hello World"
       - name: what's in the system?
         run: |
+          echo "whoami"
           whoami
+          echo "pwd"
           pwd
+          echo "ls -la"
           ls -la
+          echo "java -version"
           java -version
+          echo "git --version"
           git --version
+          echo
+          echo "RUNNER_WORKSPACE"
           echo $RUNNER_WORKSPACE
+          echo
+          echo "env"
           env
