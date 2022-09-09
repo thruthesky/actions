@@ -10,5 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: hello
-        run: echo "hello"
+      - name: hello world
+        run: echo "Hello World"
+      - name: what's in the system?
+        run: |
+          whoami
+          pwd
+          ls -la
+          java -version
+          git --version
+          echo $RUNNER_WORKSPACE
+          env
